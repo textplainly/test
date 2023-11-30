@@ -4,3 +4,5 @@
 
 [link tests](link-tests/README.md)
 
+
+![logo.svg](logo.svg)

@@ -15,6 +15,8 @@
 
 [`../to/README.md`](../to/README.md)
 
+[`/link-tests/to`](/link-tests/to)
+
 
 ## links to current directory
 
@@ -22,9 +24,12 @@
 
 [`/link-tests/from`](/link-tests/from)
 
-[`adjacent.md`](adjacent.md)
 
-[`./adjacent.md`](./adjacent.md)
+## links to sibling
+
+[`images.md`](images.md)
+
+[`./images.md`](./images.md)
 
 
 ## links to parent directory
