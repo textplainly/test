@@ -8,6 +8,7 @@
 | `../spanky.gif` | <img src="../spanky.gif"><br>I hope karma slaps you in the face before I do |
 | `../to/grrrr.gif`      | <img src="../to/grrrr.gif"><br>How people treat you is their karma; How you react is yours...     |
 | `../to/what?.gif`      | <img src="../to/what?.gif"> |
+| `../to/what%3F.gif`      | <img src="../to/what%3F.gif"> |
 
 ## absolute
 
@@ -17,6 +18,7 @@
 | `/link-tests/spanky.gif` | <img src="/link-tests/spanky.gif"><br>I hope karma slaps you in the face before I do |
 | `/link-tests/to/grrrr.gif`      | <img src="/link-tests/to/grrrr.gif"><br>How people treat you is their karma; How you react is yours...     |
 | `/link-tests/to/what?.gif`      | <img src="/link-tests/to/what?.gif"> |
+| `/link-tests/to/what%3F.gif`      | <img src="/link-tests/to/what%3F.gif"> |
 
 Links back to start:
 
