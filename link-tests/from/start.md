@@ -7,6 +7,13 @@
 [`/link-tests/to/finish.md`](/link-tests/to/finish.md)
 
 
+## links to `to/what?.md`
+
+[`../to/what?.md`](../to/what?.md)
+
+[`/link-tests/to/what?.md`](/link-tests/to/what?.md)
+
+
 ## links to `to` directory
 
 [`../to`](../to)

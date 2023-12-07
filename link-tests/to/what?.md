@@ -1,4 +1,4 @@
-# link tests target directory
+# link tests target page with `?` in name
 
 Links back to start:
 
