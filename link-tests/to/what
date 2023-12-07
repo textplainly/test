@@ -1,0 +1,12 @@
+# link tests target with deep link match for `what#ever.md`
+
+This file exists as a test for the question posed in [`start.md`](../from/start.md):
+
+> Should the `#ever.md` at the end of `what#ever.md` be treated as a link
+> to the heading `ever.md` in a file named `what`, or as a link to a file
+> named `what#ever.md`?
+
+
+## ever.md
+
+Section that `what#ever.md` *might* link to.
