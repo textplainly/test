@@ -1,4 +1,4 @@
-# link tests target page with spaces in name
+# link tests target page with space in name
 
 Links back to start:
 
