@@ -73,10 +73,12 @@
 [`...`](...)
 
 On GitHub.com, these result in a special 404 page, specifically stating that
-the repo branch in question does not contain the path:
+the repo branch in question does not contain the given path:
 
 > The master branch of test does not contain the path `link-tests/from/to/finish.md`.
-> 
+
+> The master branch of test does not contain the path `finish.md`.
+
 > The master branch of test does not contain the path `link-tests/from/...`.
 
 
