@@ -61,9 +61,9 @@
 
 | path                                       | description   | TextAssembly spec | GitHub.com behavior                                          |
 | ------------------------------------------ | ------------- | ----------------- | ------------------------------------------------------------ |
-| [`../to/zen koans.md`](../to/zen koans.md) | space in name |                   |                                                              |
+| [`../to/zen koans.md`](../to/zen koans.md) | space in name |                   | not even recognized as a link                                |
 | [`../to/zen#koans.md`](../to/zen#koans.md) | `#` in name   |                   | links to file named `zen`, but not to the `koans.md` heading within since `zen` is not recognized as a Markdown file. |
-| [`../to/what?.md`](../to/zen?.md)          | `?` in name   |                   | repo-specific 404 page: *The master branch of test does not contain the path `link-tests/to/what`.* |
+| [`../to/what?.md`](../to/what?.md)         | `?` in name   |                   | repo-specific 404 page: *The master branch of test does not contain the path `link-tests/to/what`.* |
 
 
 
