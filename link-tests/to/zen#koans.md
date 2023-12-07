@@ -1,3 +1,6 @@
+> ### *If you meet the Buddha, kill him.*
+
+
 # link tests target page with `#` in name
 
 Links back to start:
@@ -6,8 +9,6 @@ Links back to start:
 
 [`../from`](../from) (directory with no README.md)
 
-
-> *If you meet the Buddha, kill him.*
 
 
 ## A Cup of Tea
