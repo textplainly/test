@@ -66,38 +66,15 @@
 
 ## ⚠️ invalid links
 
-[`to/finish.md`](to/finish.md)
+| path                                           | description                                  | TextAssembly spec | GitHub.com behavior                                                                                                                  |
+|------------------------------------------------|----------------------------------------------|-------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| [`to/finish.md`](to/finish.md)                 | nonexistent path within assembly             |                   | repo-specific 404 page: *The master branch of test does not contain the path `link-tests/from/to/finish.md`.*                        |
+| [`/finish.md`](/finish.md)                     | nonexistent path within assembly             |                   | repo-specific 404 page: *The master branch of test does not contain the path `finish.md`.*                                           |
+| [`...`](...)                                   | nonexistent path within assembly             |                   | repo-specific 404 page: *The master branch of test does not contain the path `link-tests/from/...`.*                                 |
+| [`/..`](/..)                                   | directory above assembly root                |                   | regular GitHub.com  404 page                                                                                                         |
+| [`../../..`](../../..)                         | directory above assembly root                |                   | regular GitHub.com  404 page                                                                                                         |
+| [`../../../..`](../../../..)                   | directory *further* above assembly root      |                   | the page for the root of the repo, but to the default or HEAD branch, which in this case is effectively the same as [`../..`](../..) |
+| [`../../../../..`](../../../../..)             | directory *even further* above assembly root |                   | the page for the owner of the repo                                                                                                   |
+| [`../../../../../..`](../../../../../..)       | ok, this is getting crazy                    |                   | GitHub.com home page                                                                                                                 |
+| [`../../../../../../..`](../../../../../../..) | can we stop now?                             |                   | GitHub.com home page                                                                                                                 |
 
-[`/finish.md`](/finish.md)
-
-[`...`](...)
-
-On GitHub.com, the above result in a special 404 page, specifically stating that
-the repo branch in question does not contain the given path:
-
-> The master branch of test does not contain the path `link-tests/from/to/finish.md`.
-
-> The master branch of test does not contain the path `finish.md`.
-
-> The master branch of test does not contain the path `link-tests/from/...`.
-
-
-### links past assembly root
-
-Unlike the invalid links above, on GitHub.com, these two below 
-lead to `https://github.com/textplainly/test/blob` and result in the
-general 404 page shown for all regular invalid GitHub.com GET requests.
-
-[`../../..`](../../..)   
-
-[`/..`](/..)
-
-But these that go even further past the root don't result 404 
-
-[`../../../..`](../../../..)
-
-[`../../../../..`](../../../../..)
-
-[`../../../../../..`](../../../../../..)
-
-[`../../../../../../..`](../../../../../../..)
