@@ -57,13 +57,6 @@
 [`../../README.md`](../../README.md)
 
 
-## links past root directory
-
-[`../../..`](../../..)
-
-[`/..`](/..)
-
-
 ## links to source code
 
 [`start.js`](start.js)
@@ -71,10 +64,27 @@
 [`../to/finish.js`](../to/finish.js)
 
 
-## invalid links
+## ⚠️ invalid links
 
 [`to/finish.md`](to/finish.md)
 
-[`../../..`](../../..)
+[`/finish.md`](/finish.md)
 
 [`...`](...)
+
+On GitHub.com, these result in a special 404 page, specifically stating that
+the repo branch in question does not contain the path:
+
+> The master branch of test does not contain the path `link-tests/from/to/finish.md`.
+> 
+> The master branch of test does not contain the path `link-tests/from/...`.
+
+
+### links past root directory
+
+[`../../..`](../../..)
+
+[`/..`](/..)
+
+On GitHub.com, these result in the general 404 page shown for all regular
+invalid GitHub.com GET requests.
