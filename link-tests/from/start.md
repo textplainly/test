@@ -59,12 +59,14 @@
 
 ## links to files with "special" characters in their name
 
-| path                                       | description   | TextAssembly spec | GitHub.com behavior                                          |
-| ------------------------------------------ | ------------- | ----------------- | ------------------------------------------------------------ |
-| [`../to/zen koans.md`](../to/zen koans.md) | space in name | works | not even recognized as a link                                |
-| [`../to/zen#koans.md`](../to/zen#koans.md) | `#` in name   | see below | links to file named `zen`, but not to the `koans.md` heading within since `zen` is not recognized as a Markdown file. |
-| [`../to/what?.md`](../to/what?.md)         | `?` in name   | works | repo-specific 404 page: *The master branch of test does not contain the path `link-tests/to/what`.* Note that `?.md` is not included as part of the path in the error message. |
-| [`../to/what%3F.md`](../to/what%3F.md)         | URL escaped `?` in name   | bad link (unless there is also file named `what%3F.md`) | links to `../to/what?.md` |
+| path                                       | description             | TextAssembly spec           | GitHub.com behavior                                          |
+| ------------------------------------------ | ----------------------- | --------------------------- | ------------------------------------------------------------ |
+| [`../to/zen koans.md`](../to/zen koans.md) | space in name           | works                       | not even recognized as a link                                |
+| [`../to/zen#koans.md`](../to/zen#koans.md) | `#` in name             | see below                   | links to file named `zen`, but not to the `koans.md` heading within since `zen` is not recognized as a Markdown file. |
+| [`../to/what?.md`](../to/what?.md)         | `?` in name             | links to `../to/what?.md`   | repo-specific 404 page: *The master branch of test does not contain the path `link-tests/to/what`.* Note that `?.md` is not included as part of the path in the error message. |
+| [`../to/what%3F.md`](../to/what%3F.md)     | `%3F` is URL escaped `?` | links to `../to/what%3F.md` | links to `../to/what?.md`                                    |
+| [`../to/what%253F.md`](../to/what%253F.md)     | `%25` is URL escaped `%` | links to `../to/what%253F.md`, which does not exist | links to `../to/what%3F.md`                                    |
+|                                            |                         |                             |                                                              |
 
 GitHub.com applies URL semantics to all reference paths.
 
