@@ -82,17 +82,22 @@ the repo branch in question does not contain the given path:
 > The master branch of test does not contain the path `link-tests/from/...`.
 
 
-### links past root directory
+### links past assembly root
 
-Unlike the invalid links above, on GitHub.com, these below result in the
+Unlike the invalid links above, on GitHub.com, these two below 
+lead to `https://github.com/textplainly/test/blob` and result in the
 general 404 page shown for all regular invalid GitHub.com GET requests.
 
-[`../../..`](../../..)   `https://github.com/textplainly/test/blob`
+[`../../..`](../../..)   
 
 [`/..`](/..)
+
+But these that go even further past the root don't result 404 
 
 [`../../../..`](../../../..)
 
 [`../../../../..`](../../../../..)
 
 [`../../../../../..`](../../../../../..)
+
+[`../../../../../../..`](../../../../../../..)
