@@ -26,4 +26,4 @@ Links back to start:
 
 [`./start.md`](./start.md)
 
-[^1]: GitHub.com fails to handle the `?`, requiring it to be escaped as in the next row.
+[^1]: See *links to files with "special" characters in their name* in [`start.md`](start.md)
