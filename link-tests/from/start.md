@@ -20,9 +20,9 @@
 
 [`../to/`](../to/)
 
-[`../to/README.md`](../to/README.md)
-
 [`/link-tests/to`](/link-tests/to)
+
+[`../to/README.md`](../to/README.md)
 
 
 ## links to current directory
@@ -55,6 +55,13 @@
 [`/`](/)
 
 [`../../README.md`](../../README.md)
+
+
+## links past root directory
+
+[`../../..`](../../..)
+
+[`/..`](/..)
 
 
 ## links to source code
