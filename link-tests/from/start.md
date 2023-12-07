@@ -72,7 +72,7 @@
 
 [`...`](...)
 
-On GitHub.com, these result in a special 404 page, specifically stating that
+On GitHub.com, the above result in a special 404 page, specifically stating that
 the repo branch in question does not contain the given path:
 
 > The master branch of test does not contain the path `link-tests/from/to/finish.md`.
@@ -84,9 +84,15 @@ the repo branch in question does not contain the given path:
 
 ### links past root directory
 
-[`../../..`](../../..)
+Unlike the invalid links above, on GitHub.com, these below result in the
+general 404 page shown for all regular invalid GitHub.com GET requests.
+
+[`../../..`](../../..)   `https://github.com/textplainly/test/blob`
 
 [`/..`](/..)
 
-On GitHub.com, these result in the general 404 page shown for all regular
-invalid GitHub.com GET requests.
+[`../../../..`](../../../..)
+
+[`../../../../..`](../../../../..)
+
+[`../../../../../..`](../../../../../..)
